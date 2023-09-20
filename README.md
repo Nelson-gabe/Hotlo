@@ -1,2 +1,4 @@
 # Hotlo
-Gestion de finanzas (HOTLO) proyecto universitario 
+Gestion de finanzas proyecto universitario (Hotlo)
+
+este fue el cambio gracias <3
