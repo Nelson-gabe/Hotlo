@@ -1,0 +1,2 @@
+CALL InsertarIngreso(1, 100.50, '2023-10-25', 'Descripción del ingreso', 1);
+CALL InsertarGasto(1, 50.25, '2023-10-25', 'Descripción del gasto', 1)

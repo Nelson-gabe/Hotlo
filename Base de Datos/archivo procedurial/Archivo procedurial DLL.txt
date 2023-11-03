@@ -1,0 +1,11 @@
+CREATE PROCEDURE InsertarGasto(
+    IN p_usuario_id INT,
+    IN p_monto DECIMAL(10, 2),
+    IN p_fecha_gasto DATE,
+    IN p_descripcion TEXT,
+    IN p_categoria_gasto_id INT
+)
+BEGIN
+    INSERT INTO gastos (usuario_id, monto, fecha_gasto, descripcion, categoria_gasto_id)
+    VALUES (p_usuario_id, p_monto, p_fecha_gasto, p_descripcion, p_categoria_gasto_id);
+END
