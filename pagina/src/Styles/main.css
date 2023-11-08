@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-image: url(../Images/Fondo-principal.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header{
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 150px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: rgb(84, 72, 128);
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #0004ff;
+    transform: scale(1.1);
+}
+
+/* Diseño del texto */
+
+.informacion{
+    /* background-color: #0004ff; */
+    display: flex;
+    margin-top: 5%;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 1225px;
+    height: 400px;
+    /* border: dashed red 1px; */
+    justify-content: space-between;
+    align-items: center;
+}
+.informacion .texto__main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 600px;
+    /* background-color: #1b3039; */
+    border-radius: 20px;
+}
+
+.gato{
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.sample{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: dashed red 1px; */
+    width: 160px;
+    background: #eceff1;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25%;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.sample img{
+    border-radius: 50%;
+}
