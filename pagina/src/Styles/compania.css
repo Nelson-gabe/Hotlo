@@ -13,15 +13,20 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    padding-top: 70px;
 }
 
 .header{
+    top: 0px;
     background: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    position: absolute; /* para que no baje el menu */
+    /* background-color: rgba(247, 249, 250, 0.7); */
+    z-index: 1; /* es la  super posicion del elemento */ 
 }
 
 .header .logo{
@@ -78,4 +83,171 @@ body{
     background-color: #e2f1f8;
     color: #0004ff;
     transform: scale(1.1);
+}
+
+
+
+/* nuevo estilo */
+
+
+h1{
+    color: black; 
+    font-size: 12px;
+    float: right; 
+    font-weight: 10px; 
+    font-style: italic;
+}
+h2{
+    font-size: 36px;
+}
+
+nav{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header img{
+    padding: 18px 10px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+nav li{
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+nav li a{
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+}
+nav li a:hover{
+     color: #5E5D6E;
+}
+.parallax {
+     background-image: url("/Images/HOTLO\ COMPAÑIA.jpg");
+     height: 400px; 
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+.parallax img{
+     max-width: 400px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+     overflow: hidden;
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Reborde brillante blanco con menos desenfoque */
+    
+}
+
+#btn-fixed {
+   	display: block;
+   	position: fixed;
+    bottom: 10px;
+	  right: 10px;
+}
+.call-to-action{
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+p.big{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.call-to-action h2, .call-to-action p, .call-to-action button{
+    margin-bottom: 20px;
+}
+button{
+    padding: 15px 40px 15px 40px;
+    background-color: black;
+    font-size: 1em;
+    color: white;
+    -webkit-transition: background 1s linear;
+    transition: background 0.5s linear;
+}
+button:hover{
+    background-color: #4A4959;
+}
+.fa-whatsapp{
+    color: green;
+    font-size: 3em; 
+}
+.info-box{
+    background-color: #1C1D22;
+    margin: 0px auto;
+    padding: 110px 0 110px 0;
+    color: white;
+    text-align: center;
+}
+.info-box h2{
+    margin-bottom: 30px;
+}
+#flex-p{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#flex-p p{
+    padding: 30px;
+    max-width: 300px;
+}
+.fa-star, .fa-thumbs-up, .fa-check{
+    font-size: 2.7em;
+    display: block;
+    color: white;
+    margin-bottom: 30px;
+}
+.description-box{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.description-box h2{
+    text-align: center;
+}
+.img-container {
+    margin: 20px 0 80px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+.img-container img, img-container p{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.img-container p{
+    text-align: justify;
+}
+footer{
+    padding: 30px 0 30px 0;
+    text-align: center;
+    clear: both;
+    background-color: black;
+}
+.fa-facebook-f, .fa-twitter, .fa-pinterest-p{
+    font-size: 2em;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+   .img-container { 
+        width: 100%;   
+        margin: 0;
+    }
 }

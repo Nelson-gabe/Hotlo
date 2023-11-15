@@ -13,6 +13,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    height: 1000px;
 }
 
 .header{
@@ -74,7 +76,7 @@ body{
     transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover{
+.header .sample button:hover{
     background-color: #e2f1f8;
     color: #0004ff;
     transform: scale(1.1);
@@ -103,7 +105,7 @@ body{
     border-radius: 20px;
 }
 
-.gato{
+.grafico{
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
@@ -130,4 +132,57 @@ body{
 
 .sample img{
     border-radius: 50%;
+}
+
+/* footer */
+
+/* footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+ */
+
+.titulo88 span{
+
+    display: inline-block;
+    animation: letras 2s ease-in-out infinite;
+    animation-delay: calc(0.1s*var(--i))
+}
+    
+@keyframes letras{
+    0%,40%,100%{transform: translateY(0);}
+    20%{transform: translateY(-20px);}   
 }
