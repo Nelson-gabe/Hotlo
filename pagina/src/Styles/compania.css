@@ -14,6 +14,8 @@ body{
     background-attachment: fixed;
     background-size: cover;
     padding-top: 70px;
+    width: 100%;
+    height: 1000px;
 }
 
 .header{
@@ -85,6 +87,36 @@ body{
     transform: scale(1.1);
 }
 
+.sample{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: dashed red 1px; */
+    width: 160px;
+    background: #eceff1;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25%;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.sample img{
+    border-radius: 50%;
+}
+
+.sample:hover{
+    background-color: #e2f1f8;
+    color: rgba(25, 0, 255, 0.5);
+    transform: scale(1.1);
+}
 
 
 /* nuevo estilo */
